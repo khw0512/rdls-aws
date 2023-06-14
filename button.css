@@ -1,0 +1,191 @@
+@font-face {
+    font-family: 'KyoboHandwriting2021sjy';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KyoboHandwriting2021sjy.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    /*background: #e0e5ec;*/
+    background: white;
+    font-family: 'KyoboHandwriting2021sjy';
+}
+
+.container-nav{
+    display: flex;
+    flex-direction: row;
+}
+
+h1 {
+    position: relative;
+    text-align: center;
+    color: #353535;
+    font-size: 50px;
+    font-family: "Cormorant Garamond", serif;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    font-size: 18px;
+    color: #676767;
+}
+
+#logo{
+    width:50%;
+}
+
+.frame {
+    width: 90%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+button {
+    margin: 20px;
+}
+
+.custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    outline: none;
+}
+
+.mainPage{
+    display: flex;
+    justify-content: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+/* 17 */
+.btn-17 {
+    background: transparent;
+    width: 100%;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+    color: black;
+    box-shadow: none;
+}
+
+.btn-17 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.btn-17:before {
+    height: 0%;
+    width: 0%;
+}
+
+.btn-17:after {
+    width: 0%;
+    height: 2px;
+}
+
+.btn-17:hover {
+    background: transparent;
+    box-shadow: none;
+}
+
+.btn-17:hover:before {
+    height: 100%;
+}
+
+.btn-17:hover:after {
+    width: 100%;
+}
+
+.btn-17 span:hover {
+    color: black;
+}
+
+.btn-17 span:before,
+.btn-17 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: black;
+    transition: all 0.5s ease;
+}
+
+.btn-17 span:before {
+    width: 0%;
+    height: 0%;
+}
+
+.btn-17 span:after {
+    width: 0%;
+    height: 2px;
+}
+
+.btn-17 span:hover:before {
+    height: 100%;
+}
+
+.btn-17 span:hover:after {
+    width: 100%;
+}
+
+* {
+    padding: 0;
+    margin: 0
+}
+
+ul,
+ol {
+    list-style: none
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px
+}
+
+nav {
+    width: 80%;
+    overflow: hidden;
+    height: 100px;
+    background-color: transparent;
+    margin: 50px auto
+}
+
+#nav2>a {
+    display: block;
+    /* a태그는 글자성격 = inline */
+    float: left;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 80px;
+    padding: 0 30px;
+}
+
+#nav2>ul {
+    float: right;
+}
+
+#nav2>ul li {
+    float: left;
+    padding: 0 30px;
+    line-height: 80px;
+}
