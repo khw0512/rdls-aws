@@ -138,7 +138,7 @@
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
 }
 .mainMenu ul li{
     list-style: none;
@@ -179,6 +179,7 @@
 }
 .mainMenu ul li:hover > a, .mainMenu ul li.active > a{
     color: #7635f5;
+    font-weight: 500;
 }
 .mainMenu > ul ul{
     position: absolute;
@@ -310,7 +311,7 @@
 }
 
 .header_01 .col-lg-3.smaller_width{
-
+    background-color: red;
 }
 .header_01 .col-lg-6{
     -ms-flex: 0 0 47%;
@@ -3176,7 +3177,20 @@
     border-radius: 15px;
 }
 
+.companyName{
+    font-size: 40px;
+    text-decoration: underline;
+}
 
+.imageSmall{
+    width:50%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    box-shadow: -17px 11px 69px 23px rgba(224, 224, 224, 0.64);
+    z-index: 2;
+    border-radius: 15px;
+}
 
 /*------------------------------------------------------
 / 22. Video Action Section

@@ -27,6 +27,34 @@
 /------------------------------------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+@font-face {
+    font-family: 'NanumSquareRound';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NanumSquareRoundR';
+    src: url('../font/nanum-square-round/NanumSquareRoundR.ttf') format('truetype');
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'NanumSquareRoundR';
+    src: url('../font/nanum-square-round/NanumSquareRoundB.ttf') format('truetype');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'NanumSquareRoundR';
+    src: url('../font/nanum-square-round/NanumSquareRoundEB.ttf') format('truetype');
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'NanumSquareRoundR';
+    src: url('../font/nanum-square-round/NanumSquareRoundL.ttf') format('truetype');
+    font-weight: 200;
+}
+
 /*------------------------------------------------------
 /  2. Presets & Typography Settings
 /------------------------------------------------------*/
@@ -35,8 +63,8 @@ html,body{
     padding: 0;
 }
 body{
-    font-family: 'Jost', sans-serif;
-    font-weight: 400;
+    font-family: 'NanumSquareRoundR', sans-serif;
+    font-weight: 300;
     font-size: 14px;
     line-height: 26px;
     letter-spacing: 0;
@@ -44,6 +72,7 @@ body{
 }
 p{
     margin: 0 0 15px;
+    word-break: keep-all;
 }
 h1, h2, h3, h4, h5, h6{
     font-weight: 600;
@@ -334,6 +363,169 @@ input:focus, button:focus, select:focus, textarea:focus, a:focus{
     width: 100%;
     left: auto;
     right: 0;
+}
+
+.custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    outline: none;
+}
+
+/* 3 */
+.btn-3 {
+  background: black;
+  background: linear-gradient(0deg, grey 0%, black 100%);
+  width: 130px;
+  height: 40px;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+
+}
+.btn-3 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.btn-3:before,
+.btn-3:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+   background: grey;
+  transition: all 0.3s ease;
+}
+.btn-3:before {
+  height: 0%;
+  width: 2px;
+}
+.btn-3:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-3:hover{
+   background: transparent;
+  box-shadow: none;
+}
+.btn-3:hover:before {
+  height: 100%;
+}
+.btn-3:hover:after {
+  width: 100%;
+}
+.btn-3 span:hover{
+   color: black;
+}
+.btn-3 span:before,
+.btn-3 span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+   background: grey;
+  transition: all 0.3s ease;
+}
+.btn-3 span:before {
+  width: 2px;
+  height: 0%;
+}
+.btn-3 span:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-3 span:hover:before {
+  height: 100%;
+}
+.btn-3 span:hover:after {
+  width: 100%;
+}
+
+/* 17 */
+.btn-17 {
+    background: transparent;
+    width: 100%;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+    color: black;
+    box-shadow: none;
+}
+
+.btn-17 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.btn-17:before {
+    height: 0%;
+    width: 0%;
+}
+
+.btn-17:after {
+    width: 0%;
+    height: 2px;
+}
+
+.btn-17:hover {
+    background: transparent;
+    box-shadow: none;
+}
+
+.btn-17:hover:before {
+    height: 100%;
+}
+
+.btn-17:hover:after {
+    width: 100%;
+}
+
+.btn-17 span:hover {
+    color: black;
+}
+
+.btn-17 span:before,
+.btn-17 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: black;
+    transition: all 0.5s ease;
+}
+
+.btn-17 span:before {
+    width: 0%;
+    height: 0%;
+}
+
+.btn-17 span:after {
+    width: 0%;
+    height: 2px;
+}
+
+.btn-17 span:hover:before {
+    height: 100%;
+}
+
+.btn-17 span:hover:after {
+    width: 100%;
 }
 
 /*------------------------------------------------------
