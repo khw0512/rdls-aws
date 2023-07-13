@@ -844,7 +844,7 @@
     $(window).on('scroll', function () {
         if ($(window).scrollTop() > $(window).height())
         {
-            back.css({bottom: '50px', opacity: '1', visibility: 'visible'});
+            back.css({bottom: '10%', opacity: '1', visibility: 'visible'});
         } else
         {
             back.css({bottom: '-50px', opacity: '0', visibility: 'hidden'});

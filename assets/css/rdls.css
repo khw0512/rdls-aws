@@ -38,3 +38,15 @@
 .rdls-underline2:hover:after { transform: scaleX(1); }
 .rdls-underline2.fromRight:after{ transform-origin:100% 50%; }
 .rdls-underline2.fromLeft:after{  transform-origin:  0% 50%; }
+
+.text_box_2 h3 {
+  color:#7635F5;
+}
+
+.textOnImg{
+  font-size:small;
+  font-weight: 500;
+  position: absolute; 
+  left:50%; 
+  transform: translate( -50%, 70% );
+}

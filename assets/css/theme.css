@@ -947,6 +947,7 @@
     transition: all ease 300ms;
     -moz-transition: all ease 300ms;
     -webkit-transition: all ease 300ms;
+    height: 380px;
 }
 .icon_box_01:hover{
     border-bottom-color: #7635f5;
@@ -962,6 +963,7 @@
     color: #7635f5;
     margin: 0 0 28px;
     position: relative;
+    padding-top: 5px;
 
     transition: all ease 300ms;
     -moz-transition: all ease 300ms;
@@ -2196,7 +2198,7 @@
 /------------------------------------------------------*/
 .footer_01{
     position: relative;
-    background: url(../images/bg/9.png) no-repeat left top #f2f3fb;;
+    background: url(../images/bg/9Copy.png) no-repeat left top #f2f3fb;;
     padding: 0;
 }
 .foo_logo{
@@ -2395,7 +2397,7 @@
 }
 .footer_03{
     padding-top: 72px;
-    background: url(../images/bg/9.png) no-repeat left -44px #f2f3fb;
+    background: url(../images/bg/9Copy.png) no-repeat left -44px #f2f3fb;
 }
 .footer_03 .about_widget p{
     font-size: 16px;
@@ -3197,7 +3199,7 @@
 /------------------------------------------------------*/
 .video_actions_content{
     position: relative;
-    background: url(../images/bg/19.jpg) no-repeat center center / cover;
+    background: url(../images/bg/videoBackGround.jpg) no-repeat center center / cover;
     padding: 85px 0 70px;
     border-radius: 15px;
 }
@@ -3514,6 +3516,7 @@
     padding: 40px 45px 60px;
     border-radius: 10px;
     overflow: hidden;
+    min-height:300px;
 
     transition: all ease 300ms;
     -moz-transition: all ease 300ms;
@@ -3553,6 +3556,7 @@
     margin: 0 0 20px;
     position: relative;
     display: inline-block;
+    padding-top:5px;
 
     transition: all ease 300ms;
     -moz-transition: all ease 300ms;
