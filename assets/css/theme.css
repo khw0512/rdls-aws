@@ -3602,8 +3602,7 @@
 }
 .icon_box_03 p{
     margin: 0;
-    word-break: break-all;
-
+    word-break: keep-all;
     transition: all ease 300ms;
     -moz-transition: all ease 300ms;
     -webkit-transition: all ease 300ms;
