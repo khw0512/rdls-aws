@@ -246,6 +246,13 @@
 / 3. Responsive For Tab Device
 /--------------------------------------------------------------------------------------*/
 @media (min-width: 768px) and (max-width: 1023px){
+    .textOnImg {
+        font-size: small;
+        font-weight: 500;
+        position: absolute;
+        left: 50%;
+        transform: translate( -50%, 70% );
+    }
     /* Home Page */
     .tb_infos p{
         margin-right: 15px;
@@ -416,6 +423,44 @@
     .footer_01 .widget{
         margin-bottom: 40px;
     }
+    .folio_content{
+        position: absolute;
+        background: rgba(255, 255, 255, .6);
+        border-radius: 5px;
+        position: absolute;
+        left: 0;
+        right: auto;
+        bottom: 30px;
+        z-index: 2;
+        padding: 28px 30px 31px;
+        min-width: 242px;
+        overflow: hidden;
+    }
+
+    .folio_content p{
+        margin: 0 0 4px;
+        font-size: 12px;
+        line-height: 1;
+        color: #7635f5;
+        font-weight: 500;
+
+    }
+
+    .folio_content p a{
+        color: inherit;
+    }
+
+    .folio_content h5{
+        font-size: 14px;
+        line-height: 26px;
+        color: #1e1e1e;
+        font-weight: 700;
+        margin: 0;
+    }
+
+    .folio_content h5 a{
+        color: inherit;
+    }
     
     /* Service Page */
     .info_7_section .text-right{
@@ -446,6 +491,13 @@
 / 5. Comon in Tab & Mobile
 /--------------------------------------------------------------------------------------*/
 @media (max-width: 1023px){
+    .textOnImg {
+        font-size: small;
+        font-weight: 500;
+        position: absolute;
+        left: 50%;
+        transform: translate( -50%, 70% );
+    }
     /* Home Page */
     .light_mode_03 .header_access_btns .menu_btn, 
     .dark_mode_01 .header_access_btns .menu_btn{
@@ -473,7 +525,18 @@
     .light_mode .mainMenu,
     .light_mode_03 .mainMenu,
     .light_mode_02 .mainMenu{
-        background: #1e1e1e;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background: #f7f4fb;
+        box-shadow: -32px 21px 68.6px 1.4px rgba(218, 218, 218, 0.5);
+        max-height: 100vh;
+        overflow-x: hidden;
+        overflow-y: auto;
+        display: none;
+    }
+    .light_mode_02 .mainMenu ul li a, .light_mode_02 .header_access_btns .shoping_cart .cart_btn, .light_mode_02 .header_access_btns a.search_btn {
+        color: rgb(51, 48, 48);
     }
     .light_mode_03 .mainMenu{
         top: 1px;
@@ -678,12 +741,67 @@
     .pricing_2_section .pricing_table{
         margin-bottom: 30px;
     }
+    /* project page*/
+    .textOnImg {
+        font-size: small;
+        font-weight: 500;
+        position: absolute;
+        left: 50%;
+        transform: translate( -50%, 70% );
+    }
+    
+    .folio_content{
+        position: absolute;
+        background: rgba(255, 255, 255, .6);
+        border-radius: 5px;
+        position: absolute;
+        left: 0;
+        right: auto;
+        bottom: 30px;
+        z-index: 2;
+        padding: 28px 30px 31px;
+        min-width: 242px;
+        overflow: hidden;
+    }
+
+    .folio_content p{
+        margin: 0 0 4px;
+        font-size: 12px;
+        line-height: 1;
+        color: #7635f5;
+        font-weight: 500;
+
+    }
+
+    .folio_content p a{
+        color: inherit;
+    }
+
+    .folio_content h5{
+        font-size: 14px;
+        line-height: 26px;
+        color: #1e1e1e;
+        font-weight: 700;
+        margin: 0;
+    }
+
+    .folio_content h5 a{
+        color: inherit;
+    }
+
 }
 
 /*------------------------------------------------------------------------------------
 / 5. Responsive For Mobile Device
 --------------------------------------------------------------------------------------*/
 @media (max-width: 767px){
+    .textOnImg {
+        font-size: small;
+        font-weight: 500;
+        position: absolute;
+        left: 50%;
+        transform: translate( -50%, 70% );
+    }
     /* Home Page */
     .tb_social{
         justify-content: center;
@@ -1061,6 +1179,59 @@
     .sic_comments_form.product_comment_form input:not([type="submit"]){
         width: 100%;
         padding: 0 15px;
+    
+    /* project page*/
+    .textOnImg {
+        font-size: small;
+        font-weight: 500;
+        position: absolute;
+        left: 50%;
+        transform: translate( -50%, 70% );
+    }
+
+    }
+
+    .folio_content{
+        position: absolute;
+        background: rgba(255, 255, 255, .6);
+        border-radius: 5px;
+        position: absolute;
+        left: 0;
+        right: auto;
+        bottom: 30px;
+        z-index: 2;
+        padding: 28px 30px 31px;
+        min-width: 242px;
+        overflow: hidden;
+    }
+
+    .folio_content p{
+        margin: 0 0 4px;
+        font-size: 12px;
+        line-height: 1;
+        color: #7635f5;
+        font-weight: 500;
+
+    }
+
+    .folio_content p a{
+        color: inherit;
+    }
+
+    .folio_content h5{
+        font-size: 14px;
+        line-height: 26px;
+        color: #1e1e1e;
+        font-weight: 700;
+        margin: 0;
+    }
+
+    .folio_content h5 a{
+        color: inherit;
+    }
+
+    .pb_content h2{
+        font-size:x-large;
     }
 }
 

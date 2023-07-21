@@ -50,3 +50,8 @@
   left:50%; 
   transform: translate( -50%, 70% );
 }
+
+.service_page_section .icon_box_03 {
+  margin: 0 0 30px;
+  min-height: 330px !important;
+}

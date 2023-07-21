@@ -910,17 +910,17 @@
                 url: 'mail/mail.php',
                 data: {form_data: form_data},
                 success: function (data) {
-                    $('input[type="submit"]', $this).removeAttr('disabled').val('Message');
+                    $('input[type="submit"]', $this).removeAttr('disabled').val('이메일 보내기');
 
-                    $('.con_message', $this).fadeIn().html('<strong>Congratulations!</strong> Your query successfully sent to site admin.').removeClass('alert-warning').addClass('alert-success');
+                    $('.con_message', $this).fadeIn().html('<strong>감사합니다!</strong> 담당자에게 메일이 전송되었습니다.').removeClass('alert-warning').addClass('alert-success');
                     setTimeout(function () {
                         $('.con_message', $this).fadeOut().html('').removeClass('alert-success alert-warning');
                     }, 5000);
                 }
             });
         } else {
-            $('input[type="submit"]', $this).removeAttr('disabled').val('Message');
-            $('.con_message', $this).fadeIn().html('<strong>Opps!</strong> Errpr found. Please fix those and re submit.').removeClass('alert-success').addClass('alert-warning');
+            $('input[type="submit"]', $this).removeAttr('disabled').val('이메일 보내기');
+            $('.con_message', $this).fadeIn().html('<strong>죄송해요!</strong> 담당자에게 메일이 전송되지 않았습니다. 입력 사항을 모두 입력해 주세요.').removeClass('alert-success').addClass('alert-warning');
             setTimeout(function () {
                 $('.con_message', $this).fadeOut().html('').removeClass('alert-success alert-warning');
             }, 5000);
