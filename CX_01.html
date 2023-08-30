@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>REALDATALABS</title>
+        <title>홈페이지 사용자 만족도 분석</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
 
@@ -25,10 +25,66 @@
         <link rel="stylesheet" href="assets/css/theme.css"/>
         <link rel="stylesheet" href="assets/css/responsive.css"/>
         <!-- End Include All CSS -->
-
+        <!--Jquery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <!-- Favicon Icon -->
         <link rel="icon"  type="image/png" href="assets/images/favicon.png">
         <!-- Favicon Icon -->
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-T23BL8H');</script>
+        <!-- End Google Tag Manager -->
+                <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-PH5K8P9TX3"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-PH5K8P9TX3');
+        </script>
+        <!--BEGIN QUALTRICS WEBSITE FEEDBACK SNIPPET-->
+        <script type='text/javascript'>
+        (function(){var g=function(e,h,f,g){
+        this.get=function(a){for(var a=a+"=",c=document.cookie.split(";"),b=0,e=c.length;b<e;b++){for(var d=c[b];" "==d.charAt(0);)d=d.substring(1,d.length);if(0==d.indexOf(a))return d.substring(a.length,d.length)}return null};
+        this.set=function(a,c){var b="",b=new Date;b.setTime(b.getTime()+6048E5);b="; expires="+b.toGMTString();document.cookie=a+"="+c+b+"; path=/; "};
+        this.check=function(){var a=this.get(f);if(a)a=a.split(":");else if(100!=e)"v"==h&&(e=Math.random()>=e/100?0:100),a=[h,e,0],this.set(f,a.join(":"));else return!0;var c=a[1];if(100==c)return!0;switch(a[0]){case "v":return!1;case "r":return c=a[2]%Math.floor(100/c),a[2]++,this.set(f,a.join(":")),!c}return!0};
+        this.go=function(){if(this.check()){var a=document.createElement("script");a.type="text/javascript";a.src=g;document.body&&document.body.appendChild(a)}};
+        this.start=function(){var t=this;"complete"!==document.readyState?window.addEventListener?window.addEventListener("load",function(){t.go()},!1):window.attachEvent&&window.attachEvent("onload",function(){t.go()}):t.go()};};
+        try{(new g(100,"r","QSI_S_ZN_3CWPJ0tl0IxRtH0","https://zn3cwpj0tl0ixrth0-realdatasandbox.siteintercept.qualtrics.com/SIE/?Q_ZID=ZN_3CWPJ0tl0IxRtH0")).start()}catch(i){}})();
+        </script><div id='ZN_3CWPJ0tl0IxRtH0'><!--DO NOT REMOVE-CONTENTS PLACED HERE--></div>
+        <!--END WEBSITE FEEDBACK SNIPPET-->
+        <!--GA연동 -->
+        <script>
+        $(document).ready(function(){
+            window.addEventListener("message",receivePostMsg);
+        });
+        
+        function receivePostMsg(event)
+        {
+            var csat = event.data['csat'];
+            var nps = event.data['nps'];
+            var pov = event.data['pov'];
+            var response_id = event.data['response_id'];
+
+            if(response_id!==undefined){
+                dataLayer.push({"event":"response_id","response_id":response_id});
+            }
+            if(csat!==undefined&&csat!=='0'){
+                dataLayer.push({"event":"csat",'csat':csat});
+            }
+            if(nps!==undefined){
+                dataLayer.push({"event":"nps",'nps':nps});
+            }
+            if(pov!==undefined){
+                dataLayer.push({"event":"pov",'pov':pov});
+            }
+        }
+        </script>
+        <!--GA연동 -->
     </head>
     <body>
         <!-- Preloader Start -->
